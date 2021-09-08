@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans";
+    }
+    
+    body{
+    background-image: linear-gradient(to bottom right, rgb(42, 161, 157), rgb(36, 226, 166), rgb(76, 247, 119) );
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    }
+    .box {
+    background-color: rgba(124, 255, 17, 0.527);
+    width: 900px;
+    height: 300px;
+    max-width: 400px;
+    min-height: 40vh;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+
+    form {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .texto{
+    margin-top: 18px;
+    }
+
+    h1{
+    font-weight: 800;
+    margin-bottom: 14px;
+    color: rgb(5, 115, 112);
+    }
+
+    h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgb(5, 126, 122);
+    }
+
+    .input1 input::placeholder, .input2 input::placeholder{
+    font-size: 17px;
+    color: rgb(23, 128, 124);
+    }
+    
+
+    input[type="submit"] {
+    width: 100%;
+    margin-top: 15px;
+    white-space: normal;
+    padding: 8px;
+    background: rgb(36, 206, 200);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(203, 255, 205);
+    cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+    white-space: normal;
+    padding: 13px;
+    background: rgb(42, 165, 161);
+    transition: all .5s;
+    cursor: pointer;
+    color: rgb(207, 250, 208);
+    }
+
+    .titulo{
+    align-self: start;
+    }
+
+    @media only screen and (max-width: 400px){
+        input[type="submit"]{
+        width: 210px;
+        margin-top: 5px;
+        font-size: 15px;
+        font-size: 18px;
+        }
+
+        .h2{
+        font-size: 10%;
+        }
+
+        .texto{
+        margin-top: 5px;
+        }
+        .box{
+        justify-content: start;
+        }
+     }
+
+     @media only screen and (max-width: 300px){
+        input[type="submit"]{
+        margin-top: 5px;
+        font-size: 15px;
+        font-size: 18px;
+        }
+
+        .h2{
+        font-size: 10%;
+        }
+
+        .texto{
+        margin-top: 5px;
+        margin-bottom: 4px;
+        }
+        .box{
+        justify-content: start;
+        }
+     }
+
+
+
+
+
+</style>
+<body>
+        <main class="box">
+            <form action="a.html">
+                 <div class="titulo"><h1> Fintech  </h1></div>
+                
+                <div class="texto">
+                    <h2> <p>Olá Tobias :)</p>
+                        <p> Juntando R$20,00 todo mês você terá R$509,65 em 2 anos </p>
+                    </h2>
+                    <input type="submit" value="Simular novamente">
+                </div>
+            </form> 
+        </main>
+</body>
+</html>
